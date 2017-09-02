@@ -1,0 +1,265 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+
+ }
+
+ .footer {
+   right: 0;
+   bottom: 0;
+   left: 0;
+   padding: 1rem;
+   background-color: white;
+   text-align: center;
+   color: black;
+ }
+
+ .topbit
+ { background-image: url(../images/bg.png);
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   background-size:cover;
+   background-position: center;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+ }
+
+ ul.topnav {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+ }
+
+ /* Float the list items side by side */
+ ul.topnav li {float: left;}
+
+ /* Style the links inside the list items */
+ ul.topnav li a {
+     display: inline-block;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     transition: 0.3s;
+     font-size: 17px;
+ }
+
+ /* Change background color of links on hover */
+ ul.topnav li a:hover {background-color: #555;}
+
+ /* Hide the list item that contains the link that should open and close the topnav on small screens */
+ ul.topnav li.icon {display: none;}
+
+ .mainheader-position h1 {
+   margin-top: 0 ;
+
+ }
+ .mainheader-position {
+   position: relative;
+   top: 40vh;
+ }
+
+
+ .mainheader{
+   text-align: center;
+   color:lime;
+
+ }
+
+ .mainheader-name {
+   font-size: 50px;
+
+ }
+
+ .mainheader-title {
+   font-size: 40px;
+
+ }
+
+
+/*imagestyl */
+.background-image1st
+  {height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+
+.background-image2nd
+  {height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+
+.background-image1st
+  {height: 500px;
+  background-position: 50% -130px;
+  position: center;
+  z-index: 100;}
+
+
+h1 {
+  font-size: 40px;
+  color: #e91e63;
+  text-align: center;
+  position: relative;
+  top: 40%;
+}
+
+h2 {
+  margin-top: 50px;
+  font-size: 32px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+p {
+  color: #000;
+  letter-spacing: 0.05em;
+  text-align: center;;
+}
+
+
+hr {
+  border: 0;
+  height: 1px;
+  margin: 0 0 30px 0;
+  color: #fff;
+}
+
+
+header {
+  background-image: url(../images/bg.jpg);
+  height: 500px auto;
+  position: relative;
+
+}
+
+
+
+
+.aboutimg {
+  background-image: url(../images/pic05.jpg);
+}
+.about {
+
+}
+
+.skills {
+  width: 100%;
+  margin: 150px auto;
+  padding: 100px;
+}
+
+
+.pro {
+  background-image: url(../images/printpage.gif);
+}
+
+#projects img {
+  display: block;
+  border: 1px solid black;
+  width: 50%;
+  margin: 25px auto;
+
+}
+
+#projects img:hover {
+  cursor: pointer;
+}
+
+.mv {
+  background-image: url(../images/pic08.gif);
+}
+
+
+.footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+}
+
+
+
+/*MEDIA QUERIES*/
+
+/*tablets*/
+  @media only screen and (min-width: 380px) and (max-width: 767px) {
+
+    .about {
+      max-width: 40em;
+      margin: 50px auto;
+    }
+
+
+
+}
+
+/*desktop */
+  @media only screen and (min-width: 768px) {
+
+    .background-image1st {
+      background-position: center bottom;
+      height: 700px;
+    }
+
+    .about {
+      max-width: 40em;
+      margin: 50px auto;
+
+    }
+
+    #projects img {
+      display: inline;
+      border: 1px solid gray;
+      width: 29.5%;
+      margin: 5% 1.5%;
+    }
+
+    p, small {
+      font-size: 16px;
+    }
+    }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
